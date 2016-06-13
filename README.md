@@ -5,12 +5,12 @@ server: http://apis.lovecust.com
 path: /apis/ecust-related/<api-specific-name>
 
 ## api-summary
-0. ecust-library-status
-0. ecust-jwc-list
+0. library-status
+0. jwc-list
 
 ## api-details
 ---
-- [ecust-library-status](http://apis.lovecust.com/apis/ecust-related/ecust-library-status)
+- [library-status](http://apis.lovecust.com/apis/ecust-related/library-status)
 ```
 # students number of library
 
@@ -29,7 +29,7 @@ example:
 }
 ```
 ---
-- [ecust-jwc-list](http://apis.lovecust.com/apis/ecust-related/ecust-jwc-list)
+- [jwc-list](http://apis.lovecust.com/apis/ecust-related/jwc-list)
 
 ```
 # jwc latest news list
