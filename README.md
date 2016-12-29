@@ -1,16 +1,29 @@
 # Apis of Ecust
 
 ## about-apis
-server: http://apis.lovecust.com
-path: /apis/ecust-related/<api-specific-name>
 
-## api-summary
-0. library-status
-0. jwc-list
+server: http://apis.lovecust.com
+
+## Ecust APIs
+
+- Ecust JWC Newses
+	- [*GET* Ecust JWC Newses List][api-ecust-jwc-newses]
+	- JWC News
+		- [*GET* JWC News Detail][api-ecust-jwc-news]
+		- Ecust JWC News Detail
+			- [*GET* JWC News Comments List][api-ecust-jwc-news-comments]
+			- *POST* a News Comment
+- Ecust Library
+	- [*GET* Library Status][api-ecust-library-status]
+	- Library Status Statistics
+		- [*GET* Library Status Statistics][api-ecust-library-status-statistics]
 
 ## api-details
+
 ---
-- [library-status](http://apis.lovecust.com/apis/ecust-related/library-status)
+
+- [library-status][api-ecust-library-status]
+
 ```
 # students number of library
 
@@ -29,9 +42,10 @@ example:
 }
 ```
 ---
-- [jwc-list](http://apis.lovecust.com/apis/ecust-related/jwc-list)
+- [jwc-list][api-ecust-jwc-newses]
 
 ```
+
 # jwc latest news list
 
 params:
@@ -42,7 +56,9 @@ return:
 		date: "2016-04-05"
 	]
 ```
+
 example:
+
 ```json
 [
   {
@@ -61,3 +77,9 @@ example:
   }
 ]
 ```
+
+[api-ecust-jwc-newses]: http://apis.lovecust.com/apis/ecust/jwc/newses "API: Get Ecust Newses List"
+[api-ecust-jwc-news]: http://apis.lovecust.com/apis/ecust/jwc/newses/29ba220583cae79ff0005e8804d676ab "API: Get Ecust JWC News Detail"
+[api-ecust-jwc-news-comments]: http://apis.lovecust.com/apis/ecust/jwc/newses/29ba220583cae79ff0005e8804d676ab/comments "API: Get JWC News Comments"
+[api-ecust-library-status]: http://apis.lovecust.com/apis/ecust/library/status "API: Get Ecust Library Status"
+[api-ecust-library-status-statistics]: http://apis.lovecust.com/apis/ecust/library/status/statistics?interval=1&limit=100 "API: Get Library Status Statistics"
