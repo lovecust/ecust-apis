@@ -1,0 +1,4435 @@
+{
+	"id": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+	"name": "Lovecust-API",
+	"description": "# Lovecust APIs v1.2\n\n> Created by Fisher on 2016-09-22 at 21:10.\n\nFor lovecust api documents and test scripts.\n\n---\n\n## Api Path Summary\n\n---\n\n### App\n\n- /apis/app/general/android-version\n- /apis/app/general/internet-status\n- /apis/app/users/:uid/profile-status\n\n### Ecust\n\n- /apis/ecust/jwc/newses\n- /apis/ecust/jwc/newses/:newsId\n- /apis/ecust/jwc/newses/:newsId/comments\n- /apis/ecust/library/status\n\n---\n\n\n\n\n",
+	"order": [],
+	"folders": [
+		{
+			"id": "a8d78956-57b5-d3ff-2850-cf6ed2f3906e",
+			"name": "ecust-actiivty",
+			"description": "",
+			"order": [
+				"a87e2bf7-f98b-b495-5713-7ec9a4f9ee55",
+				"b33ddfd0-69ba-53d8-5f87-8168734c7162",
+				"c884be29-129e-7141-265c-9e262068cb7f",
+				"2ddea6c3-06f8-6625-5fd2-0f6c7c73933f",
+				"fa993aa8-5c44-95d7-97bb-ff9323d9aec3"
+			],
+			"owner": "822070",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572"
+		},
+		{
+			"id": "432d52e9-a5ed-123b-33f6-476bb91c424d",
+			"name": "ecust-actiivty-member",
+			"description": "",
+			"order": [
+				"fc47da64-7a0b-e29f-da63-8b33b632dd92",
+				"b91257cf-71ac-9032-33c3-58e9b477fa86",
+				"385f2ee0-4025-e02c-3398-c9cd9e75e279",
+				"90676e46-436c-9cf2-5b41-1b777069a966",
+				"9f7034ba-8ca9-a613-64b8-c0ccdb7e14ae"
+			],
+			"owner": "822070",
+			"collectionId": "1df042c8-8b8b-59a8-86d6-67d73b7016c4"
+		},
+		{
+			"id": "0daefc20-552f-05a5-dd13-3eaa5fab8f55",
+			"name": "ecust-activity-images",
+			"description": "",
+			"order": [
+				"7f1b24e6-f015-2718-cfa8-8c50ba8204c4",
+				"25b3aba2-c2d3-6016-7493-1015af1202e0",
+				"013e9e57-00f3-b3ef-4abe-53e76b07622c",
+				"01886d7a-9dcb-ab54-0727-682e53aefe27",
+				"1be608e7-fd8e-ae3a-04c3-2869f67502c8"
+			],
+			"owner": "822070",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572"
+		},
+		{
+			"owner": "822070",
+			"lastUpdatedBy": "822070",
+			"lastRevision": 583486637,
+			"id": "d38a1515-4732-0bdf-6717-4c4b4839df2c",
+			"name": "ecust-jwc",
+			"description": "# Ecust jwc module.\n\n> Created by Fisher on 2016-09-22 at 21:24.\n\n---\n\n\n## Decleration of objects.\n\n---\n\ndefine <jwc-news-object>\n\n- path: {String}\n  - News path in jwc-web-site.\n- name: {String}\n  - News name.\n- date: {String}\n  - News published date.\n- tag: {Number}\n  - News tag.\n- md5: {String}\n  - md5(name+path+date).\n- attachments: [{{jwc-news-attachment-object}}]\n\n---\n\ndefine <jwc-news-attachment-object>\n\n- path: {String}\n  - Attachment path in jwc-web-site.\n- name: {String}\n  - Attachment name.\n- format: {String}\n  - Attachment format.\n- size: {Number} *Only when attachment is a file.*\n  - Attachment size.\n- md5: {String} *Only when attachment is a file.*\n  - md5(attachment-content).\n\n---\n\n",
+			"order": [
+				"d2660213-8553-954b-3b86-9378822ab832",
+				"0125033d-5aa9-a1d4-c17b-8ee4b4d70926",
+				"50cadfa7-ee5b-0b3d-6584-43fb1cbf746d",
+				"5c1ed61f-8049-e174-b472-ef7bc20f0466"
+			],
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572"
+		},
+		{
+			"owner": "822070",
+			"lastUpdatedBy": "822070",
+			"lastRevision": 584750432,
+			"id": "e85c8e76-bb1d-96c8-3dd6-90a18e881c03",
+			"name": "ecust-library",
+			"description": "",
+			"order": [
+				"85e303c0-ae32-2abb-7af3-2cc0853a5ef5",
+				"226c49dd-2594-5c98-17c7-4b06250a72da",
+				"c9bc0b47-d187-f2dd-eab9-b6ac59825bc5"
+			]
+		},
+		{
+			"owner": "822070",
+			"lastUpdatedBy": "822070",
+			"lastRevision": 584767229,
+			"id": "06133f0e-9d26-9c41-2375-06e878164421",
+			"name": "lovecust-general",
+			"description": "# Lovecust App General APIs.\n\n> Created by Fisher on 2016-09-23 at 09:36.\n\n---\n\n",
+			"order": [
+				"def2f9ab-8aaa-9725-f5b1-e3df129aca79"
+			],
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572"
+		},
+		{
+			"id": "26a3b157-ba82-e48e-679a-6d653e74bcbc",
+			"name": "lovecust-users-feedback",
+			"description": "",
+			"order": [
+				"1cbc9dd6-3e49-de00-675e-f071cf2a5b52",
+				"8249a80c-d25f-91c1-581e-8e11d0ab05a4"
+			],
+			"owner": "822070"
+		},
+		{
+			"owner": "822070",
+			"lastUpdatedBy": "822070",
+			"lastRevision": 584990091,
+			"id": "fcad1a82-c368-eb7a-31a4-4226eba44e4d",
+			"name": "lovecust-users-profile",
+			"description": "# Lovecust APIs related to Users.\n\n> Created by Fisher on 2016-09-23 at 09:36.\n\n---\n\nUnauthorized user\n\n\n",
+			"order": [
+				"2b7a0542-aeac-789d-80c8-5e5cb35df0a0",
+				"0f8a7956-b635-2f41-8f7c-1c23aa4e01c0"
+			],
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572"
+		},
+		{
+			"owner": "822070",
+			"lastUpdatedBy": "822070",
+			"lastRevision": 583492699,
+			"id": "a18780dd-a24b-d06e-7bff-366832e92bfc",
+			"name": "spa.turing",
+			"description": "",
+			"order": [
+				"e072416b-a22a-bda8-3577-ee4c6c9e5a20"
+			]
+		}
+	],
+	"timestamp": 0,
+	"owner": "822070",
+	"public": false,
+	"requests": [
+		{
+			"id": "0125033d-5aa9-a1d4-c17b-8ee4b4d70926",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/ecust/jwc/newses/{{news-id}}",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\n\ntests[\"Jwc-News-Detail\"] = res.path && res.name && res.date && res.value\n                                && res.tag >= 1 && res.tag <= 4;\n\npostman.setEnvironmentVariable(\"news-id\", res.md5);",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482051927257,
+			"name": "jwc-news-detail",
+			"description": "# Ecust Jwc News Detail\n\n> Created by Fisher on 2016-09-22 at 22:28.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n- {{jwc-news-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583329087,
+					"request": "0125033d-5aa9-a1d4-c17b-8ee4b4d70926",
+					"id": "a9b54b46-69c2-ecee-d710-b3a7c29948c6",
+					"name": "Jwc-Newses",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "16",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 14:12:11 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"38b5-SzxufnJb6yg18CDofRf8RQ\"",
+							"description": ""
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"path\":\"/s/75/t/134/0f/4e/info69454.htm\",\"name\":\"关于2016���上海市高等学校计算机等级考试上机模拟考试的通知\",\"date\":\"2016-09-22\",\"tag\":2,\"md5\":\"b92277f2eba27e2c2dacaa7345328807\",\"attachments\":[]},{\"path\":\"/s/75/t/134/07/fa/info67578.htm\",\"name\":\"2016年全国大���生英语竞赛获奖名单\",\"date\":\"2016-05-19\",\"tag\":4,\"md5\":\"a2187147e13f9f7a51f9135f0ea22477\",\"attachments\":[{\"path\":\"/picture/article/75/03/a5/19f56b024e959cb2a644490ddad6/065ab3a2-5dec-44ca-99a3-a5267c262bc4.pdf\",\"name\":\"2016全国大学生英语竞赛获奖名单\",\"format\":\"pdf\",\"size\":111311,\"md5\":\"ebf6d2c42a36e591f872d3da97ba75b6\"}]},{\"path\":\"/s/75/t/134/0f/4e/info69454.htm\",\"name\":\"关于2016年上海市高等学校计算机等级考试上机模拟考试的通知\",\"date\":\"2016-09-22\",\"tag\":2,\"md5\":\"5d528d25abbff2fe2ec1fbe39ed6a2fb\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/12/info69138.htm\",\"name\":\"20161学期重读报名通知(新)\",\"date\":\"2016-09-22\",\"tag\":1,\"bold\":true,\"md5\":\"fc9458df8d02f59b0de16c576d3e63c4\",\"attachments\":[{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/dccb04c3-0786-451b-8ade-1fde7b3c297d.doc\",\"name\":\"重读报名流程及说明-学生参考\",\"format\":\"doc\",\"size\":34304,\"md5\":\"85c33f665be9a0a4bfba4b01fd6776dc\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/601f4fd1-9abc-48ce-81d9-6beb6a64efa9.doc\",\"name\":\"学生替换课程认定申请表\",\"format\":\"doc\",\"size\":32768,\"md5\":\"27dd96f40985ec2beabe02f800d3fcdb\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/bcab4393-4607-4b1d-95f6-d6e1f38eea5b.xls\",\"name\":\"201601学期 开班重读课程 开课情况表\",\"format\":\"xls\",\"size\":41472,\"md5\":\"e0e14236d0355c9b2b97eb6dbe8e10f9\"}]},{\"path\":\"/s/75/t/134/0e/81/info69249.htm\",\"name\":\"2016年下���年全国大学英语四六级等级考试报名通知\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"3daaa484bf8e4b06467beb05d471b94a\",\"attachments\":[{\"path\":\"/picture/article/75/e5/af/f7c42b3342309c26d6a58e3b0c97/c413dde3-ef21-4a02-bc7c-3d922ca66c20.doc\",\"name\":\"四六级在线报名操作流程说明（学生）\",\"format\":\"doc\",\"size\":1365504,\"md5\":\"a992e40a28001c5ce80a4afc6aeb37ac\"},{\"path\":\"http://urp.ecust.edu.cn/\",\"name\":\"http://urp.ecust.edu.cn\",\"format\":\"\"},{\"path\":\"http://ksbm.ecust.edu.cn/\",\"name\":\"http://ksbm.ecust.edu.cn\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0f/45/info69445.htm\",\"name\":\"《有机化学》答疑安排\",\"date\":\"2016-09-22\",\"tag\":4,\"md5\":\"1f761fd4353afd21eafce9d67b27a7c9\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0f/2f/info69423.htm\",\"name\":\"本科国庆节放假通知\",\"date\":\"2016-09-22\",\"tag\":1,\"md5\":\"c3084f2e6eea56cca52bb550f2ed0182\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/7d/info68989.htm\",\"name\":\"体育学院关于补考、缓考、重修、保健班及学生成绩疑���处理的通知\",\"date\":\"2016-09-20\",\"tag\":4,\"md5\":\"8c602c4030af0ea3754bb2b87ef3dd7c\",\"attachments\":[]},{\"path\":\"/s/75/t/134/02/54/info66132.htm\",\"name\":\"关于进一步严肃考风考纪的通知\",\"date\":\"2016-04-08\",\"tag\":2,\"md5\":\"d1bbb9a72dd78d2576a9d2e12344e8bb\",\"attachments\":[]},{\"path\":\"/s/75/t/134/02/53/info66131.htm\",\"name\":\"关于规范考试考核中手机等电子设备管理的补充规定\",\"date\":\"2016-04-08\",\"tag\":2,\"md5\":\"7c7f38f0af85867e1321f07e9965a866\",\"attachments\":[]},{\"path\":\"/s/75/t/134/07/fa/info67578.htm\",\"name\":\"2016年全国大学生英语竞赛获奖名单\",\"date\":\"2016-05-19\",\"tag\":4,\"md5\":\"15029b568c83c7462f357899e611cd95\",\"attachments\":[{\"path\":\"/picture/article/75/03/a5/19f56b024e959cb2a644490ddad6/065ab3a2-5dec-44ca-99a3-a5267c262bc4.pdf\",\"name\":\"2016全国大学生英语竞赛获奖名单\",\"format\":\"pdf\",\"size\":111311,\"md5\":\"ebf6d2c42a36e591f872d3da97ba75b6\"}]},{\"path\":\"/s/75/t/134/0c/87/info68743.htm\",\"name\":\"第十七届化工创新实践大赛获奖名单\",\"date\":\"2016-07-12\",\"tag\":3,\"md5\":\"02735b076a2d49dd35ae91c0c038db4c\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/a1/info69025.htm\",\"name\":\"2016-2017学年第一学期《实验化学3》教学安排发布\",\"date\":\"2016-09-06\",\"tag\":1,\"bold\":true,\"md5\":\"fa092c508fd2e494088e179a4f2c170a\",\"attachments\":[{\"path\":\"/picture/article/75/41/50/72b79b6a4e1088da8acc97fe0c04/dddb2447-51cd-4e89-a212-605a68ca1596.rar\",\"name\":\"2016-2017学年第一学期实验化学3教学安排\",\"format\":\"rar\",\"size\":910690,\"md5\":\"318a6468ac74877a29bb5c954f611370\"}]},{\"path\":\"/s/75/t/134/0d/8b/info69003.htm\",\"name\":\"华东理工大学2016“华理东方仿真杯”初赛参赛者名单\",\"date\":\"2016-09-06\",\"tag\":3,\"md5\":\"4bf4e9d73849d2512e121ed8ace1c01d\",\"attachments\":[{\"path\":\"tel:10140213\",\"name\":\"10140213\",\"format\":\"\"},{\"path\":\"tel:10140212\",\"name\":\"10140212\",\"format\":\"\"},{\"path\":\"tel:10140188\",\"name\":\"10140188\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0d/b4/info69044.htm\",\"name\":\"申请2016年6月CET考试成绩核查的办法\",\"date\":\"2016-09-07\",\"tag\":2,\"md5\":\"47f8d8c5337d6904358a7b770542ce60\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/be/info69054.htm\",\"name\":\"2016--2017(1)辅修专业收费和开课通知\",\"date\":\"2016-09-08\",\"tag\":2,\"md5\":\"6508425cb45e7f9b6fc98580576d8090\",\"attachments\":[{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/8945e5c4-5725-4346-8e21-2ecd7510c351.docx\",\"name\":\"2016-2017(1) 计算机技术及应用收费和课程安排\",\"format\":\"docx\",\"size\":18256,\"md5\":\"d91608c60b2cf818286462e8715de612\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/76c78ae0-f0c8-4d88-911b-14ee751e7f81.xls\",\"name\":\"2016-2017(1) 理学院辅修收费标准和课程安排\",\"format\":\"xls\",\"size\":56832,\"md5\":\"5e1f2193168ad8fb3d29a5a20c72f0cc\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/09981710-20ea-4585-a252-09f0fd34ac4e.doc\",\"name\":\"2016-2017(1) 外语辅修专业开学等相关通知\",\"format\":\"doc\",\"size\":123392,\"md5\":\"c93140bee70d99f1411adc591f4e81ee\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/7f59a830-a48d-46f2-8d6a-3384b7449e2c.doc\",\"name\":\"2016-2017（1）法学辅修14级、15级开学通知\",\"format\":\"doc\",\"size\":42496,\"md5\":\"c0613d0d677ced8d0fa17d9d3cb2fe32\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/8a4218b0-2a96-4bd0-9f86-f66ff5ef7e1e.doc\",\"name\":\"2016-2017(1)商学院辅修补考、注册.缴费通知\",\"format\":\"doc\",\"size\":67584,\"md5\":\"d18eaed2cea36d858226bb7350e20808\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/020b10b4-f9f6-4a97-843d-693bd126fa1f.doc\",\"name\":\"2016-2017（1）艺术设计辅修专业报到注册通知\",\"format\":\"doc\",\"size\":55296,\"md5\":\"f3fbd8c0f28531543e9453bb95dc3a99\"}]},{\"path\":\"/s/75/t/134/0d/de/info69086.htm\",\"name\":\"第十八期电子产品设计技能训练报名通知\",\"date\":\"2016-09-09\",\"tag\":3,\"md5\":\"97a75c653780c8d9346b845c216653af\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/da/info69082.htm\",\"name\":\"20161学期奉贤退改选通知\",\"date\":\"2016-09-09\",\"tag\":1,\"bold\":true,\"md5\":\"079531f4015e6038b6d3f0e701ca95bd\",\"attachments\":[{\"path\":\"/picture/article/75/5d/aa/747410c447a5bf5f87ff41e9f471/d8c42016-f532-4813-96c6-5fe9d3d5cd1d.doc\",\"name\":\"学生调课申请表\",\"format\":\"doc\",\"size\":34816,\"md5\":\"a95978b8d3937802662f389ede0f29ac\"},{\"path\":\"/picture/article/75/5d/aa/747410c447a5bf5f87ff41e9f471/233f5d04-a208-4936-86e2-0201e631f520.doc\",\"name\":\"华东理工大学课程免听申请表\",\"format\":\"doc\",\"size\":29696,\"md5\":\"09990c2a8446a3b6569f93e12f6a08e4\"}]},{\"path\":\"/s/75/t/134/0d/db/info69083.htm\",\"name\":\"20161学期徐汇退改选通知\",\"date\":\"2016-09-09\",\"tag\":1,\"bold\":true,\"md5\":\"cb3f62ca29f16d41ce687b6725ab0d2a\",\"attachments\":[{\"path\":\"/picture/article/75/dc/07/a8dab50c4d38a9b60ea74dd49ec5/cc7fe3f6-9520-4c7a-a6f9-60e37c3adf91.doc\",\"name\":\"学生调课申请表\",\"format\":\"doc\",\"size\":292,\"md5\":\"92f636b55b913325449309eb90ae9455\"},{\"path\":\"/picture/article/75/dc/07/a8dab50c4d38a9b60ea74dd49ec5/24b3d111-f3cc-4a83-bbc6-6b0e342c955e.doc\",\"name\":\"华东理工大学课程免听申请表\",\"format\":\"doc\",\"size\":29696,\"md5\":\"09990c2a8446a3b6569f93e12f6a08e4\"}]},{\"path\":\"/s/75/t/134/0d/b3/info69043.htm\",\"name\":\"20161短学期选课通知\",\"date\":\"2016-09-09\",\"tag\":3,\"red\":true,\"md5\":\"32f883350db0af1bba4722240f9a069b\",\"attachments\":[{\"path\":\"http://202.120.108.14/xk2.asp\",\"name\":\"http://202.120.108.14/xk2.asp\",\"format\":\"\"},{\"path\":\"/picture/article/75/d5/2e/f9a57e4c41d3b9565010d458f70a/c0032d5e-218c-4ce3-8ae1-7befe7f5ed0e.xls\",\"name\":\"20161短学期竞赛、实践课程汇总\",\"format\":\"xls\",\"size\":58368,\"md5\":\"fba20efa3f1c209177f0a15d29609e6e\"}]},{\"path\":\"/s/75/t/134/0d/b6/info69046.htm\",\"name\":\"2016年数学拓展班报名通知\",\"date\":\"2016-09-12\",\"tag\":4,\"md5\":\"24a695a1ad89589f5aa4867b52964c3b\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/27/info69159.htm\",\"name\":\"20161短学期实践、竞赛正式课程（含关闭课程）\",\"date\":\"2016-09-13\",\"tag\":3,\"red\":true,\"md5\":\"2067ebbcb979b1f006126aabdb548770\",\"attachments\":[{\"path\":\"/picture/article/75/f7/ef/06a800914fc88c1a4ff0a124f5b7/c215013e-660a-4d1b-a94a-448c1e32f522.xls\",\"name\":\"20161短学期竞赛、实践正式课程（含关闭课程）\",\"format\":\"xls\",\"size\":69120,\"md5\":\"69c0d6d58949b8f6cede18f212155544\"}]},{\"path\":\"/s/75/t/134/0e/3e/info69182.htm\",\"name\":\"华东理工大学2017届推荐免试硕士研究生面试教室安排\",\"date\":\"2016-09-14\",\"tag\":2,\"md5\":\"6c764a943b1eea9d01f1555259efbf6c\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/98/info69272.htm\",\"name\":\"华东理工大学2017年推免生名单公示\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"bd95386c757f178ad04197c197bd2170\",\"attachments\":[{\"path\":\"mailto:jiaowuchu@ecust.edu.cn\",\"name\":\"jiaowuchu@ecust.edu.cn、电话64252400,18917103803）。公示起止时间：&nbsp;9月18日～9月24日。\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0e/81/info69249.htm\",\"name\":\"2016年下半年全国大学英语四六级等级考试报名通知\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"1094e7e85f6be315cf8b0408f881c8ce\",\"attachments\":[{\"path\":\"/picture/article/75/e5/af/f7c42b3342309c26d6a58e3b0c97/c413dde3-ef21-4a02-bc7c-3d922ca66c20.doc\",\"name\":\"四六级在线报名操作流程说明（学生）\",\"format\":\"doc\",\"size\":1365504,\"md5\":\"a992e40a28001c5ce80a4afc6aeb37ac\"},{\"path\":\"http://urp.ecust.edu.cn/\",\"name\":\"http://urp.ecust.edu.cn\",\"format\":\"\"},{\"path\":\"http://ksbm.ecust.edu.cn/\",\"name\":\"http://ksbm.ecust.edu.cn\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0e/77/info69239.htm\",\"name\":\"20161学期新生选课名单及退改选学生名单发布通知\",\"date\":\"2016-09-18\",\"tag\":1,\"bold\":true,\"md5\":\"7694393c8d3c3be3fbb11ddea54476f3\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/7a/info69242.htm\",\"name\":\"第一届华东理工大学张江树教学名师奖评选通知\",\"date\":\"2016-09-18\",\"tag\":3,\"bold\":true,\"md5\":\"193cf2937e4ed32ccd47e94d41cb7c70\",\"attachments\":[{\"path\":\"/picture/article/75/3f/83/cdcc553845888594399147466e93/1380a617-4707-4951-a179-3d5a8ec76c43.doc\",\"name\":\"第一届华东理工大学张江树教学名师奖申报表\",\"format\":\"doc\",\"size\":95744,\"md5\":\"4eb544cfbd75038eed347df300b4cf38\"},{\"path\":\"/picture/article/75/3f/83/cdcc553845888594399147466e93/12ec6a5b-4cf2-40bc-a179-5de5cbfe0b4d.xls\",\"name\":\"第一届华东理工大学张江树教学名师奖申报汇总表\",\"format\":\"xls\",\"size\":19968,\"md5\":\"f0cf637b4a45bd715a8559144d653c8e\"},{\"path\":\"/picture/article/75/3f/83/cdcc553845888594399147466e93/f0386b5e-e0c7-4cc4-996f-76a386ed58df.doc\",\"name\":\"校教〔2016〕67号 华东理工大学关于设立“张江树教学名师奖”的决定\",\"format\":\"doc\",\"size\":34816,\"md5\":\"d0de914d74092c0d3d831bd54dc9bfbc\"}]},{\"path\":\"/s/75/t/134/0e/99/info69273.htm\",\"name\":\"华东理工大学第19届研究生支教团录取名单公示\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"ebc35c585c6b804928f5b6c5df71ab0f\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/88/info69256.htm\",\"name\":\"20161学期返校学习报名\",\"date\":\"2016-09-18\",\"tag\":1,\"bold\":true,\"md5\":\"07196ee8fea45ed62d42bec3ef8d7d6a\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/a7/info69287.htm\",\"name\":\"华东理工大学第八届（秋）文献检索知识竞赛日程安排\",\"date\":\"2016-09-19\",\"tag\":3,\"md5\":\"555503908c4d8abad1bb8518e8dc70ac\",\"attachments\":[{\"path\":\"http://202.120.96.104/jssm.htm\",\"name\":\"http://202.120.96.104/jssm.htm\",\"format\":\"\"},{\"path\":\"http://202.120.96.104:7777/file/ji/jssm.htm\",\"name\":\"http://202.120.96.104/jsxt.\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0d/80/info68992.htm\",\"name\":\"各学院教务办公室地点及电话\",\"date\":\"2016-09-19\",\"tag\":4,\"md5\":\"452616de9450cd4a0371b1bf5c999112\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/12/info69138.htm\",\"name\":\"20161学期重读报名通知(新)\",\"date\":\"2016-09-19\",\"tag\":1,\"bold\":true,\"md5\":\"5f9d291dc500402d6963c336d1a8d5a5\",\"attachments\":[{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/dccb04c3-0786-451b-8ade-1fde7b3c297d.doc\",\"name\":\"重读报名流程及说明-学生参考\",\"format\":\"doc\",\"size\":34304,\"md5\":\"85c33f665be9a0a4bfba4b01fd6776dc\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/601f4fd1-9abc-48ce-81d9-6beb6a64efa9.doc\",\"name\":\"学生替换课程认定申请表\",\"format\":\"doc\",\"size\":32768,\"md5\":\"27dd96f40985ec2beabe02f800d3fcdb\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/08610c2f-4721-4c87-948b-ba36d2e8acb3.xls\",\"name\":\"201601学期 开班重读课程 开课情况表\",\"format\":\"xls\",\"size\":292,\"md5\":\"41e58aa57c18a404c2d5e1a7783c8a0e\"}]},{\"path\":\"/s/75/t/134/0e/d5/info69333.htm\",\"name\":\"20161素质教育讲座通知及安排表\",\"date\":\"2016-09-20\",\"tag\":1,\"md5\":\"6dee907ea6b39b733ee9cf7d0756ce03\",\"attachments\":[{\"path\":\"/picture/article/75/03/1f/314dbe424de995b5a7f4724a7ac2/16b8e01c-ebdb-4435-995c-1c43a50440eb.xlsx\",\"name\":\"20161素质教育讲座安排\",\"format\":\"xlsx\",\"size\":14289,\"md5\":\"abfd903fe586bcbc86c33c12bfc03d08\"}]},{\"path\":\"/s/75/t/134/0e/e9/info69353.htm\",\"name\":\"关于公示2015级“卓越工程师教育培养计划”选拔录取名单的通知\",\"date\":\"2016-09-20\",\"tag\":3,\"md5\":\"7c49f0ededd483fc4ffce0676d4b803b\",\"attachments\":[{\"path\":\"mailto:zhangfan2008@ecust.edu.cn\",\"name\":\"zhangfan2008@ecust.edu.cn\",\"format\":\"\"},{\"path\":\"/picture/article/75/0c/04/daedea514bcabb3a969a193999e9/dc5e5077-7ea0-4140-82b8-036e7db31cf2.xlsx\",\"name\":\"附件：华东理工大学2015级“卓越工程师教育培养计划”试点班录取名单\",\"format\":\"xlsx\",\"size\":13636,\"md5\":\"14538cab99973c78c52321c02ba6f0d7\"}]},{\"path\":\"/s/75/t/134/0d/7d/info68989.htm\",\"name\":\"体育学院关于补考、缓考、重修、保健班及学生成绩疑问处理的通知\",\"date\":\"2016-09-20\",\"tag\":4,\"md5\":\"b315d4f3e6f828b2e28ebb29178e95f6\",\"attachments\":[]}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{jwc}}/newses\",\"headers\":[{\"key\":\"{{header-user-key}}\",\"value\":\"{{header-user-value}}\",\"enabled\":true}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-22T14:18:09.000Z",
+					"updatedAt": "2016-09-22T14:18:09.000Z"
+				}
+			]
+		},
+		{
+			"id": "013e9e57-00f3-b3ef-4abe-53e76b07622c",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/images/{{image-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"ecust-activity-image-detail\"] = res && res.imageID && res.name;\npostman.setEnvironmentVariable(\"image-id\", res.imageID);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486735293021,
+			"name": "Get Image",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "9430a43c-e294-a660-f1b2-15e5d7202183",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "0cdce196-7797-0725-0333-b75d6baa0412",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "01886d7a-9dcb-ab54-0727-682e53aefe27",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/images/{{image-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"ecust-activity-update-image\"] = res && res.name;\n\npostman.setEnvironmentVariable(\"image-id\", res.imageID);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486737656435,
+			"name": "Update Image",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "b9741762-eea6-b6ca-8446-30b0c1de9ebd",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "9d0f9dfc-67da-cd14-108c-4c610480e244",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": "{\n\t\"name\": \"Automation\"\n}"
+		},
+		{
+			"id": "0f8a7956-b635-2f41-8f7c-1c23aa4e01c0",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/lovecust/users/profile/avatar",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PUT",
+			"data": [
+				{
+					"key": "avatar",
+					"value": "avatar-caillou.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482078399447,
+			"name": "users-profile-avatar",
+			"description": "# Update User Profile\n\n> Created by Fisher on 2016-09-23 at 09:37.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n{{response-okay-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": []
+		},
+		{
+			"id": "1be608e7-fd8e-ae3a-04c3-2869f67502c8",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/images/{{image-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-remove-member\"] = res && res.name;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486737671616,
+			"name": "Remove Image",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "d75e3602-7710-5be1-a932-5985d6610fba",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "086052e4-69b1-c26f-7bc3-8734c1f70525",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "1cbc9dd6-3e49-de00-675e-f071cf2a5b52",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-apis}}/lovecust/users/feedback",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"Feedback\"] = res;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482063857508,
+			"name": "feedback",
+			"description": "# Send feedback to lovecust.\n\n> Created by Fisher on 2016-09-23 at 10:15.\n\nMethod: **POST**.\n\n---\n\n\n## Response\n\n{{feedback-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [],
+			"rawModeData": "{\n  \"nick\": \"Postman\",\n  \"value\": \"Nice to meet u :)\"\n}"
+		},
+		{
+			"id": "226c49dd-2594-5c98-17c7-4b06250a72da",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/ecust/library/status/statistics?interval=1&limit=1044",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\n// Make sure today's number is positive.\n// Make sure 6 floors.\n// Make sure each floor have the expected seats.\ntests[\"Library-Status-\" + res.length] = res instanceof Array;\n\nvar status;\n\nfor(var i = 0; i < res.length; i++){\n    status = res[i];\n    tests[\"Library-Status-\"+i] = status.today >= 0 && \n                            status.available.length === 6 && status.occupied.length === 6 &&\n                    \t\tstatus.available[0] + status.occupied[0] === 36 &&\n                    \t\tstatus.available[1] + status.occupied[1] === 322 &&\n                    \t\tstatus.available[2] + status.occupied[2] === 461 &&\n                    \t\tstatus.available[3] + status.occupied[3] === 372 &&\n                    \t\tstatus.available[4] + status.occupied[4] === 349 &&\n                    \t\tstatus.available[5] + status.occupied[5] === 56;\n\n}",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482047966228,
+			"name": "library-status statistics",
+			"description": "# Ecust Library Status\n\n> Created by Fisher on 2016-09-22 at 21:19.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n- today: {Number}\n  - today's students amount.\n- available: [Number]\n  - Available seats of each floor.\n- occupied: [Number]\n  - Occupied seats of each floor.\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583065551,
+					"request": "85e303c0-ae32-2abb-7af3-2cc0853a5ef5",
+					"id": "ffc482c4-5b78-91e5-ed94-deaec14d7875",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-22T13:12:18.000Z",
+					"updatedAt": "2016-09-22T13:12:18.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"id": "25b3aba2-c2d3-6016-7493-1015af1202e0",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/images",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "image",
+					"value": "refresh-webstorm.sh",
+					"type": "file",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "Refresh WebStorm",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"ecust-activities-images-post\"] = res && \n                                res.imageID &&\n                                res.name;\n\npostman.setEnvironmentVariable(\"image-id\", res.imageID);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486741233917,
+			"name": "Post A Image",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "db46a2b7-0e14-b639-ca1d-cc99b8efa66b",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "78242a2c-2af6-e72b-87ed-b7c4c3439a90",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"id": "2b7a0542-aeac-789d-80c8-5e5cb35df0a0",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-apis}}/lovecust/users/profile",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"Android-Version\"] = res;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482078194249,
+			"name": "users-profile",
+			"description": "# Update User Profile\n\n> Created by Fisher on 2016-09-23 at 09:37.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n{{response-okay-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [],
+			"rawModeData": "{\n  \"nick\": \"Fisher-Postman\"\n}"
+		},
+		{
+			"id": "2ddea6c3-06f8-6625-5fd2-0f6c7c73933f",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-detail\"] = res && \n                                res._id &&\n                                res.info.name;\n\npostman.setEnvironmentVariable(\"activity-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485658795144,
+			"name": "Update Activity",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "d8569f14-13c7-dc1d-0920-40fa705d2515",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "dac1abcb-d612-55a0-68db-aeea07b4d6da",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": "{\n\t\"name\": \"English Cornor\"\n}"
+		},
+		{
+			"id": "385f2ee0-4025-e02c-3398-c9cd9e75e279",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/members/{{member-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-member-detail\"] = res && res._id;\npostman.setEnvironmentVariable(\"member-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485682389333,
+			"name": "Get Member Detail",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "3ef1ff25-b183-48ed-8f4a-c1d8994f084f",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "ca95c523-750e-da72-4dfc-52c010fbc6c6",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "50cadfa7-ee5b-0b3d-6584-43fb1cbf746d",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-apis}}/ecust/jwc/newses/{{news-id}}/comments",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\n\ntests[\"Jwc-News-Detail\"] = res._id;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484238335801,
+			"name": "jwc-news-comments",
+			"description": "# Ecust Jwc News Comment\n\n> Created by Fisher on 2016-09-22 at 22:39.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- nick: {String}\n  - User nickname.\n- value: {String}\n  - Comment value.\n- atime: {Number} *Optional*\n  - Comment available time.\n\n\n## Response\n\n- {{jwc-news-comment-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583470145,
+					"request": "50cadfa7-ee5b-0b3d-6584-43fb1cbf746d",
+					"id": "3dbc0475-1eb1-551f-bcaf-e994c5073d09",
+					"name": "Jwc-Comment-Post",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "23",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "55",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 15:04:28 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"37-XAIdULE8iTAs7hmQDmwm7g\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"id\":\"57e3f2fcb3902d7061b35eed\",\"ctime\":1474556668528}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{jwc}}/newses/{{newsId}}/comments\",\"headers\":[{\"key\":\"{{header-user-key}}\",\"value\":\"{{header-user-value}}\",\"enabled\":true},{\"key\":\"Content-Type\",\"value\":\"application/json\",\"enabled\":true,\"description\":\"The mime type of this content\"}],\"data\":\"{\\n\\t\\\"nick\\\": \\\"Fisher\\\",\\n\\t\\\"value\\\": \\\"Great to see you here.\\\"\\n}\",\"method\":\"POST\",\"dataMode\":\"raw\"}",
+					"createdAt": "2016-09-22T14:54:54.000Z",
+					"updatedAt": "2016-09-22T14:54:54.000Z"
+				}
+			],
+			"rawModeData": "{\n  \"nick\": \"Fisher\",\n  \"value\": \"Great to see you here.\"\n}"
+		},
+		{
+			"id": "5c1ed61f-8049-e174-b472-ef7bc20f0466",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/ecust/jwc/newses/{{news-id}}/comments",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\n\ntests[\"Jwc-News-Detail\"] = res instanceof Array;\n\nfor(var i = 0; i < res.length; i++){\n    var comment = res[i];\n    tests[\"Jwc-News-Comment-\" + i] = comment.nick\n                                        && comment.value\n                                        && comment.userID.length === 32\n                                        && comment._id\n                                        && comment.ctime > 0;\n}\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482052136922,
+			"name": "jwc-news-comments",
+			"description": "# Ecust Jwc News Comments\n\n> Created by Fisher on 2016-09-22 at 22:39.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n- {{jwc-news-comment-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583467757,
+					"request": "5c1ed61f-8049-e174-b472-ef7bc20f0466",
+					"id": "903814de-69d4-2445-6758-a6da4f28a1ca",
+					"name": "Jwc-News-Comments",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "24",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "215",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 15:04:04 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"d7-mUzgdkF5ARAUrrZJF5gb+A\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"_id\":\"57e3f0f2f031866f01c8ba44\",\"cTime\":\"2016-09-22T14:55:46.534Z\",\"nick\":\"Fisher\",\"value\":\"Great to see you here.\",\"uid\":\"f681d4a83f24150012b57d3831e8901d\",\"ctime\":1474556146534,\"id\":\"57e3f0f2f031866f01c8ba44\"}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{jwc}}/newses/{{newsId}}/comments\",\"headers\":[{\"key\":\"{{header-user-key}}\",\"value\":\"{{header-user-value}}\",\"enabled\":true}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-22T14:54:15.000Z",
+					"updatedAt": "2016-09-22T14:54:15.000Z"
+				}
+			]
+		},
+		{
+			"id": "7f1b24e6-f015-2718-cfa8-8c50ba8204c4",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/images",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"ecust-activity-images\"] = res && res instanceof Array;\n\nif(0 < res.length){\n    postman.setEnvironmentVariable(\"image-id\", res[0].imageID);\n}\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1486735329758,
+			"name": "Get Images",
+			"description": "",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "fadee930-f12e-cad0-2af2-3b88eb9ad9f3",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "04d42f8b-89c8-1642-4160-02365153fda1",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "8249a80c-d25f-91c1-581e-8e11d0ab05a4",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/lovecust/users/feedback",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"Android-Version\"] = res;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482063846099,
+			"name": "feedback-unread",
+			"description": "# Fetch unread feedback from lovecust.\n\n> Created by Fisher on 2016-09-23 at 10:32.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n{{feedback-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 584983982,
+					"request": "8249a80c-d25f-91c1-581e-8e11d0ab05a4",
+					"id": "34a56c85-a325-0528-5acd-4c5c74da0cf8",
+					"name": "Feedback-Unread",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "18",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "311",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Fri, 23 Sep 2016 03:35:04 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"137-ivMG1q7acGTzFBXsoF6B3w\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"_id\":\"57e4a2e3924212295920d0fd\",\"lTime\":\"2016-09-23T03:34:59.952Z\",\"cTime\":\"2016-09-23T03:34:59.952Z\",\"to\":\"postman&10149999\",\"from\":\"lovecust-admin\",\"nick\":\"Lovecust\",\"value\":\"Thanks for your reply: 10149999\",\"__v\":0,\"read\":false,\"ltime\":1474601699952,\"ctime\":1474601699952,\"id\":\"57e4a2e3924212295920d0fd\"}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{app-users}}/{{user-id}}/feedback\",\"headers\":[{\"key\":\"{{header-user-key}}\",\"value\":\"{{header-user-value}}\",\"enabled\":true}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-23T03:25:07.000Z",
+					"updatedAt": "2016-09-23T03:25:07.000Z"
+				}
+			]
+		},
+		{
+			"id": "85e303c0-ae32-2abb-7af3-2cc0853a5ef5",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/ecust/library/status",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\n// Make sure today's number is positive.\n// Make sure 6 floors.\n// Make sure each floor have the expected seats.\ntests[\"Library-Status\"] = res.today >= 0 && res.available.length === 6 && res.occupied.length === 6 &&\n                    \t\tres.available[0] + res.occupied[0] === 36 &&\n                    \t\tres.available[1] + res.occupied[1] === 322 &&\n                    \t\tres.available[2] + res.occupied[2] === 461 &&\n                    \t\tres.available[3] + res.occupied[3] === 372 &&\n                    \t\tres.available[4] + res.occupied[4] === 349 &&\n                    \t\tres.available[5] + res.occupied[5] === 56;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482047937042,
+			"name": "library-status",
+			"description": "# Ecust Library Status\n\n> Created by Fisher on 2016-09-22 at 21:19.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n- today: {Number}\n  - today's students amount.\n- available: [Number]\n  - Available seats of each floor.\n- occupied: [Number]\n  - Occupied seats of each floor.\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583065551,
+					"request": "85e303c0-ae32-2abb-7af3-2cc0853a5ef5",
+					"id": "b358b5e0-92db-7be7-66e5-c7baef43df73",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-22T13:12:18.000Z",
+					"updatedAt": "2016-09-22T13:12:18.000Z"
+				}
+			]
+		},
+		{
+			"id": "90676e46-436c-9cf2-5b41-1b777069a966",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/members/{{member-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "PATCH",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-update-member\"] = res && res._id;\n\npostman.setEnvironmentVariable(\"member-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485693751998,
+			"name": "Update Member",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "2555ea35-bd7e-5f59-1f74-ec79c8ddd0da",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "e31665b3-ef5b-2253-ac0e-b5c48abbeccc",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": "{\n\t\"major\": \"Automation\"\n}"
+		},
+		{
+			"id": "9f7034ba-8ca9-a613-64b8-c0ccdb7e14ae",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/members/{{member-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-remove-member\"] = res && res._id;\n\npostman.setEnvironmentVariable(\"member-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485682406888,
+			"name": "Remove Member",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "84b82a6d-4ee7-74ac-8355-a8b1be1af7b8",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "ae24f5a9-4370-7ccc-e376-45d9bdb4ba4c",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "a87e2bf7-f98b-b495-5713-7ec9a4f9ee55",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activities\"] = res && res instanceof Array;\n\nif(0 < res.length){\n    postman.setEnvironmentVariable(\"activity-id\", res[0]._id);\n}\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485658823115,
+			"name": "Get Activities",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "4326625d-893f-48fb-80c4-77b720802694",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "bc316f7a-77ed-73ec-d559-6a50e9439462",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "b33ddfd0-69ba-53d8-5f87-8168734c7162",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-post\"] = res && \n                                res._id &&\n                                res.info.name;\n\npostman.setEnvironmentVariable(\"activity-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485667493463,
+			"name": "Post Activities",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "a3cae745-48f1-4cae-3676-e0ee1a5c210e",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "ef6d7749-ca83-46ba-a492-d24a5cd52b86",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": "{\n\t\"name\": \"Stars V.S. Stars\",\n\t\"description\": \"Who are your favorite starts and why? What kind of starts do you like best? What do you like them most? Let's have a chat!\",\n\t\"time\": \"14th December, Wednesday, 20:45-21:45\",\n\t\"location\": \"E401, Feng Xian\"\n}"
+		},
+		{
+			"id": "b91257cf-71ac-9032-33c3-58e9b477fa86",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/members",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-post-member\"] = res && res._id;\n\npostman.setEnvironmentVariable(\"member-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485682374519,
+			"name": "Post Members",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "9420e944-a004-627e-c7e8-c6eb7759ca9e",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "3c93829d-8d25-c5e1-b900-5dc913ab29bf",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": "{\n\t\"name\": \"Fisher\"\n}"
+		},
+		{
+			"id": "c884be29-129e-7141-265c-9e262068cb7f",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-detail\"] = res && \n                                res._id &&\n                                res.name;\n\npostman.setEnvironmentVariable(\"activity-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485681637565,
+			"name": "Get Activity Detail",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "c4b432f6-5c28-190f-936b-83ecb2fc4fd4",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "6c54b7b6-5992-4f31-2c7f-0253a1a3c032",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "c9bc0b47-d187-f2dd-eab9-b6ac59825bc5",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/ecust/library/status/statistics",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\n// Make sure today's number is positive.\n// Make sure 6 floors.\n// Make sure each floor have the expected seats.\ntests[\"Library-Status-\" + res.length] = res instanceof Array;\n\nvar status;\n\nfor(var i = 0; i < res.length; i++){\n    status = res[i];\n    tests[\"Library-Status-\"+i] = status.today >= 0 && \n                            status.available.length === 6 && status.occupied.length === 6 &&\n                    \t\tstatus.available[0] + status.occupied[0] === 36 &&\n                    \t\tstatus.available[1] + status.occupied[1] === 322 &&\n                    \t\tstatus.available[2] + status.occupied[2] === 461 &&\n                    \t\tstatus.available[3] + status.occupied[3] === 372 &&\n                    \t\tstatus.available[4] + status.occupied[4] === 349 &&\n                    \t\tstatus.available[5] + status.occupied[5] === 56;\n\n}",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482047944178,
+			"name": "library-status statistics copy",
+			"description": "# Ecust Library Status\n\n> Created by Fisher on 2016-09-22 at 21:19.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n- today: {Number}\n  - today's students amount.\n- available: [Number]\n  - Available seats of each floor.\n- occupied: [Number]\n  - Occupied seats of each floor.\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583065551,
+					"request": "85e303c0-ae32-2abb-7af3-2cc0853a5ef5",
+					"id": "65dd0ae4-bee5-6859-2739-146d4a591914",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-22T13:12:18.000Z",
+					"updatedAt": "2016-09-22T13:12:18.000Z",
+					"write": true
+				}
+			]
+		},
+		{
+			"id": "d2660213-8553-954b-3b86-9378822ab832",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/ecust/jwc/newses",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\n\ntests[\"Jwc-News-List\"] = res.length >= 0;\n\n\nfor(var i = 0; i < res.length; i++){\n    var news = res[i];\n    tests[\"Jwc-News-Detail: \" + i] = news.path && news.name && news.date && news.md5\n                                && 0 <= news.tag && 4 >= news.tag;\n    if(news.attachments){\n        for(var j = 0; j < news.attachments.length; j++){\n            var attachment = news.attachments[j];\n            tests[\"Jwc-News-Attachment: \" + i + '.' + j] = attachment.path && attachment.name && attachment.format;\n            if(attachment.path.startsWith('/')){\n                tests[\"Jwc-News-Attachment-Format: \" + i + '.'  + j] = attachment.size > 0 && attachment.md5;\n            }\n        }\n    }\n}\n\nif(res.length>0){\n    postman.setEnvironmentVariable(\"news-id\", res[0].md5);\n}",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482047897282,
+			"name": "jwc-newses",
+			"description": "# Ecust Jwc Newses\n\n> Created by Fisher on 2016-09-22 at 21:22.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n- [{{jwc-news-object}}]\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 583272421,
+					"request": "d2660213-8553-954b-3b86-9378822ab832",
+					"id": "89917370-532b-beaa-d4d9-5e1f68925764",
+					"name": "Jwc-Newses",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "16",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 14:12:11 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"38b5-SzxufnJb6yg18CDofRf8RQ\"",
+							"description": ""
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "[{\"path\":\"/s/75/t/134/0f/4e/info69454.htm\",\"name\":\"关于2016���上海市高等学校计算机等级考试上机模拟考试的通知\",\"date\":\"2016-09-22\",\"tag\":2,\"md5\":\"b92277f2eba27e2c2dacaa7345328807\",\"attachments\":[]},{\"path\":\"/s/75/t/134/07/fa/info67578.htm\",\"name\":\"2016年全国大���生英语竞赛获奖名单\",\"date\":\"2016-05-19\",\"tag\":4,\"md5\":\"a2187147e13f9f7a51f9135f0ea22477\",\"attachments\":[{\"path\":\"/picture/article/75/03/a5/19f56b024e959cb2a644490ddad6/065ab3a2-5dec-44ca-99a3-a5267c262bc4.pdf\",\"name\":\"2016全国大学生英语竞赛获奖名单\",\"format\":\"pdf\",\"size\":111311,\"md5\":\"ebf6d2c42a36e591f872d3da97ba75b6\"}]},{\"path\":\"/s/75/t/134/0f/4e/info69454.htm\",\"name\":\"关于2016年上海市高等学校计算机等级考试上机模拟考试的通知\",\"date\":\"2016-09-22\",\"tag\":2,\"md5\":\"5d528d25abbff2fe2ec1fbe39ed6a2fb\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/12/info69138.htm\",\"name\":\"20161学期重读报名通知(新)\",\"date\":\"2016-09-22\",\"tag\":1,\"bold\":true,\"md5\":\"fc9458df8d02f59b0de16c576d3e63c4\",\"attachments\":[{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/dccb04c3-0786-451b-8ade-1fde7b3c297d.doc\",\"name\":\"重读报名流程及说明-学生参考\",\"format\":\"doc\",\"size\":34304,\"md5\":\"85c33f665be9a0a4bfba4b01fd6776dc\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/601f4fd1-9abc-48ce-81d9-6beb6a64efa9.doc\",\"name\":\"学生替换课程认定申请表\",\"format\":\"doc\",\"size\":32768,\"md5\":\"27dd96f40985ec2beabe02f800d3fcdb\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/bcab4393-4607-4b1d-95f6-d6e1f38eea5b.xls\",\"name\":\"201601学期 开班重读课程 开课情况表\",\"format\":\"xls\",\"size\":41472,\"md5\":\"e0e14236d0355c9b2b97eb6dbe8e10f9\"}]},{\"path\":\"/s/75/t/134/0e/81/info69249.htm\",\"name\":\"2016年下���年全国大学英语四六级等级考试报名通知\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"3daaa484bf8e4b06467beb05d471b94a\",\"attachments\":[{\"path\":\"/picture/article/75/e5/af/f7c42b3342309c26d6a58e3b0c97/c413dde3-ef21-4a02-bc7c-3d922ca66c20.doc\",\"name\":\"四六级在线报名操作流程说明（学生）\",\"format\":\"doc\",\"size\":1365504,\"md5\":\"a992e40a28001c5ce80a4afc6aeb37ac\"},{\"path\":\"http://urp.ecust.edu.cn/\",\"name\":\"http://urp.ecust.edu.cn\",\"format\":\"\"},{\"path\":\"http://ksbm.ecust.edu.cn/\",\"name\":\"http://ksbm.ecust.edu.cn\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0f/45/info69445.htm\",\"name\":\"《有机化学》答疑安排\",\"date\":\"2016-09-22\",\"tag\":4,\"md5\":\"1f761fd4353afd21eafce9d67b27a7c9\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0f/2f/info69423.htm\",\"name\":\"本科国庆节放假通知\",\"date\":\"2016-09-22\",\"tag\":1,\"md5\":\"c3084f2e6eea56cca52bb550f2ed0182\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/7d/info68989.htm\",\"name\":\"体育学院关于补考、缓考、重修、保健班及学生成绩疑���处理的通知\",\"date\":\"2016-09-20\",\"tag\":4,\"md5\":\"8c602c4030af0ea3754bb2b87ef3dd7c\",\"attachments\":[]},{\"path\":\"/s/75/t/134/02/54/info66132.htm\",\"name\":\"关于进一步严肃考风考纪的通知\",\"date\":\"2016-04-08\",\"tag\":2,\"md5\":\"d1bbb9a72dd78d2576a9d2e12344e8bb\",\"attachments\":[]},{\"path\":\"/s/75/t/134/02/53/info66131.htm\",\"name\":\"关于规范考试考核中手机等电子设备管理的补充规定\",\"date\":\"2016-04-08\",\"tag\":2,\"md5\":\"7c7f38f0af85867e1321f07e9965a866\",\"attachments\":[]},{\"path\":\"/s/75/t/134/07/fa/info67578.htm\",\"name\":\"2016年全国大学生英语竞赛获奖名单\",\"date\":\"2016-05-19\",\"tag\":4,\"md5\":\"15029b568c83c7462f357899e611cd95\",\"attachments\":[{\"path\":\"/picture/article/75/03/a5/19f56b024e959cb2a644490ddad6/065ab3a2-5dec-44ca-99a3-a5267c262bc4.pdf\",\"name\":\"2016全国大学生英语竞赛获奖名单\",\"format\":\"pdf\",\"size\":111311,\"md5\":\"ebf6d2c42a36e591f872d3da97ba75b6\"}]},{\"path\":\"/s/75/t/134/0c/87/info68743.htm\",\"name\":\"第十七届化工创新实践大赛获奖名单\",\"date\":\"2016-07-12\",\"tag\":3,\"md5\":\"02735b076a2d49dd35ae91c0c038db4c\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/a1/info69025.htm\",\"name\":\"2016-2017学年第一学期《实验化学3》教学安排发布\",\"date\":\"2016-09-06\",\"tag\":1,\"bold\":true,\"md5\":\"fa092c508fd2e494088e179a4f2c170a\",\"attachments\":[{\"path\":\"/picture/article/75/41/50/72b79b6a4e1088da8acc97fe0c04/dddb2447-51cd-4e89-a212-605a68ca1596.rar\",\"name\":\"2016-2017学年第一学期实验化学3教学安排\",\"format\":\"rar\",\"size\":910690,\"md5\":\"318a6468ac74877a29bb5c954f611370\"}]},{\"path\":\"/s/75/t/134/0d/8b/info69003.htm\",\"name\":\"华东理工大学2016“华理东方仿真杯”初赛参赛者名单\",\"date\":\"2016-09-06\",\"tag\":3,\"md5\":\"4bf4e9d73849d2512e121ed8ace1c01d\",\"attachments\":[{\"path\":\"tel:10140213\",\"name\":\"10140213\",\"format\":\"\"},{\"path\":\"tel:10140212\",\"name\":\"10140212\",\"format\":\"\"},{\"path\":\"tel:10140188\",\"name\":\"10140188\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0d/b4/info69044.htm\",\"name\":\"申请2016年6月CET考试成绩核查的办法\",\"date\":\"2016-09-07\",\"tag\":2,\"md5\":\"47f8d8c5337d6904358a7b770542ce60\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/be/info69054.htm\",\"name\":\"2016--2017(1)辅修专业收费和开课通知\",\"date\":\"2016-09-08\",\"tag\":2,\"md5\":\"6508425cb45e7f9b6fc98580576d8090\",\"attachments\":[{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/8945e5c4-5725-4346-8e21-2ecd7510c351.docx\",\"name\":\"2016-2017(1) 计算机技术及应用收费和课程安排\",\"format\":\"docx\",\"size\":18256,\"md5\":\"d91608c60b2cf818286462e8715de612\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/76c78ae0-f0c8-4d88-911b-14ee751e7f81.xls\",\"name\":\"2016-2017(1) 理学院辅修收费标准和课程安排\",\"format\":\"xls\",\"size\":56832,\"md5\":\"5e1f2193168ad8fb3d29a5a20c72f0cc\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/09981710-20ea-4585-a252-09f0fd34ac4e.doc\",\"name\":\"2016-2017(1) 外语辅修专业开学等相关通知\",\"format\":\"doc\",\"size\":123392,\"md5\":\"c93140bee70d99f1411adc591f4e81ee\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/7f59a830-a48d-46f2-8d6a-3384b7449e2c.doc\",\"name\":\"2016-2017（1）法学辅修14级、15级开学通知\",\"format\":\"doc\",\"size\":42496,\"md5\":\"c0613d0d677ced8d0fa17d9d3cb2fe32\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/8a4218b0-2a96-4bd0-9f86-f66ff5ef7e1e.doc\",\"name\":\"2016-2017(1)商学院辅修补考、注册.缴费通知\",\"format\":\"doc\",\"size\":67584,\"md5\":\"d18eaed2cea36d858226bb7350e20808\"},{\"path\":\"/picture/article/75/a5/7e/d11e5a1b4b7f8eae2a4dad07fcba/020b10b4-f9f6-4a97-843d-693bd126fa1f.doc\",\"name\":\"2016-2017（1）艺术设计辅修专业报到注册通知\",\"format\":\"doc\",\"size\":55296,\"md5\":\"f3fbd8c0f28531543e9453bb95dc3a99\"}]},{\"path\":\"/s/75/t/134/0d/de/info69086.htm\",\"name\":\"第十八期电子产品设计技能训练报名通知\",\"date\":\"2016-09-09\",\"tag\":3,\"md5\":\"97a75c653780c8d9346b845c216653af\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0d/da/info69082.htm\",\"name\":\"20161学期奉贤退改选通知\",\"date\":\"2016-09-09\",\"tag\":1,\"bold\":true,\"md5\":\"079531f4015e6038b6d3f0e701ca95bd\",\"attachments\":[{\"path\":\"/picture/article/75/5d/aa/747410c447a5bf5f87ff41e9f471/d8c42016-f532-4813-96c6-5fe9d3d5cd1d.doc\",\"name\":\"学生调课申请表\",\"format\":\"doc\",\"size\":34816,\"md5\":\"a95978b8d3937802662f389ede0f29ac\"},{\"path\":\"/picture/article/75/5d/aa/747410c447a5bf5f87ff41e9f471/233f5d04-a208-4936-86e2-0201e631f520.doc\",\"name\":\"华东理工大学课程免听申请表\",\"format\":\"doc\",\"size\":29696,\"md5\":\"09990c2a8446a3b6569f93e12f6a08e4\"}]},{\"path\":\"/s/75/t/134/0d/db/info69083.htm\",\"name\":\"20161学期徐汇退改选通知\",\"date\":\"2016-09-09\",\"tag\":1,\"bold\":true,\"md5\":\"cb3f62ca29f16d41ce687b6725ab0d2a\",\"attachments\":[{\"path\":\"/picture/article/75/dc/07/a8dab50c4d38a9b60ea74dd49ec5/cc7fe3f6-9520-4c7a-a6f9-60e37c3adf91.doc\",\"name\":\"学生调课申请表\",\"format\":\"doc\",\"size\":292,\"md5\":\"92f636b55b913325449309eb90ae9455\"},{\"path\":\"/picture/article/75/dc/07/a8dab50c4d38a9b60ea74dd49ec5/24b3d111-f3cc-4a83-bbc6-6b0e342c955e.doc\",\"name\":\"华东理工大学课程免听申请表\",\"format\":\"doc\",\"size\":29696,\"md5\":\"09990c2a8446a3b6569f93e12f6a08e4\"}]},{\"path\":\"/s/75/t/134/0d/b3/info69043.htm\",\"name\":\"20161短学期选课通知\",\"date\":\"2016-09-09\",\"tag\":3,\"red\":true,\"md5\":\"32f883350db0af1bba4722240f9a069b\",\"attachments\":[{\"path\":\"http://202.120.108.14/xk2.asp\",\"name\":\"http://202.120.108.14/xk2.asp\",\"format\":\"\"},{\"path\":\"/picture/article/75/d5/2e/f9a57e4c41d3b9565010d458f70a/c0032d5e-218c-4ce3-8ae1-7befe7f5ed0e.xls\",\"name\":\"20161短学期竞赛、实践课程汇总\",\"format\":\"xls\",\"size\":58368,\"md5\":\"fba20efa3f1c209177f0a15d29609e6e\"}]},{\"path\":\"/s/75/t/134/0d/b6/info69046.htm\",\"name\":\"2016年数学拓展班报名通知\",\"date\":\"2016-09-12\",\"tag\":4,\"md5\":\"24a695a1ad89589f5aa4867b52964c3b\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/27/info69159.htm\",\"name\":\"20161短学期实践、竞赛正式课程（含关闭课程）\",\"date\":\"2016-09-13\",\"tag\":3,\"red\":true,\"md5\":\"2067ebbcb979b1f006126aabdb548770\",\"attachments\":[{\"path\":\"/picture/article/75/f7/ef/06a800914fc88c1a4ff0a124f5b7/c215013e-660a-4d1b-a94a-448c1e32f522.xls\",\"name\":\"20161短学期竞赛、实践正式课程（含关闭课程）\",\"format\":\"xls\",\"size\":69120,\"md5\":\"69c0d6d58949b8f6cede18f212155544\"}]},{\"path\":\"/s/75/t/134/0e/3e/info69182.htm\",\"name\":\"华东理工大学2017届推荐免试硕士研究生面试教室安排\",\"date\":\"2016-09-14\",\"tag\":2,\"md5\":\"6c764a943b1eea9d01f1555259efbf6c\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/98/info69272.htm\",\"name\":\"华东理工大学2017年推免生名单公示\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"bd95386c757f178ad04197c197bd2170\",\"attachments\":[{\"path\":\"mailto:jiaowuchu@ecust.edu.cn\",\"name\":\"jiaowuchu@ecust.edu.cn、电话64252400,18917103803）。公示起止时间：&nbsp;9月18日～9月24日。\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0e/81/info69249.htm\",\"name\":\"2016年下半年全国大学英语四六级等级考试报名通知\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"1094e7e85f6be315cf8b0408f881c8ce\",\"attachments\":[{\"path\":\"/picture/article/75/e5/af/f7c42b3342309c26d6a58e3b0c97/c413dde3-ef21-4a02-bc7c-3d922ca66c20.doc\",\"name\":\"四六级在线报名操作流程说明（学生）\",\"format\":\"doc\",\"size\":1365504,\"md5\":\"a992e40a28001c5ce80a4afc6aeb37ac\"},{\"path\":\"http://urp.ecust.edu.cn/\",\"name\":\"http://urp.ecust.edu.cn\",\"format\":\"\"},{\"path\":\"http://ksbm.ecust.edu.cn/\",\"name\":\"http://ksbm.ecust.edu.cn\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0e/77/info69239.htm\",\"name\":\"20161学期新生选课名单及退改选学生名单发布通知\",\"date\":\"2016-09-18\",\"tag\":1,\"bold\":true,\"md5\":\"7694393c8d3c3be3fbb11ddea54476f3\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/7a/info69242.htm\",\"name\":\"第一届华东理工大学张江树教学名师奖评选通知\",\"date\":\"2016-09-18\",\"tag\":3,\"bold\":true,\"md5\":\"193cf2937e4ed32ccd47e94d41cb7c70\",\"attachments\":[{\"path\":\"/picture/article/75/3f/83/cdcc553845888594399147466e93/1380a617-4707-4951-a179-3d5a8ec76c43.doc\",\"name\":\"第一届华东理工大学张江树教学名师奖申报表\",\"format\":\"doc\",\"size\":95744,\"md5\":\"4eb544cfbd75038eed347df300b4cf38\"},{\"path\":\"/picture/article/75/3f/83/cdcc553845888594399147466e93/12ec6a5b-4cf2-40bc-a179-5de5cbfe0b4d.xls\",\"name\":\"第一届华东理工大学张江树教学名师奖申报汇总表\",\"format\":\"xls\",\"size\":19968,\"md5\":\"f0cf637b4a45bd715a8559144d653c8e\"},{\"path\":\"/picture/article/75/3f/83/cdcc553845888594399147466e93/f0386b5e-e0c7-4cc4-996f-76a386ed58df.doc\",\"name\":\"校教〔2016〕67号 华东理工大学关于设立“张江树教学名师奖”的决定\",\"format\":\"doc\",\"size\":34816,\"md5\":\"d0de914d74092c0d3d831bd54dc9bfbc\"}]},{\"path\":\"/s/75/t/134/0e/99/info69273.htm\",\"name\":\"华东理工大学第19届研究生支教团录取名单公示\",\"date\":\"2016-09-18\",\"tag\":2,\"md5\":\"ebc35c585c6b804928f5b6c5df71ab0f\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/88/info69256.htm\",\"name\":\"20161学期返校学习报名\",\"date\":\"2016-09-18\",\"tag\":1,\"bold\":true,\"md5\":\"07196ee8fea45ed62d42bec3ef8d7d6a\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/a7/info69287.htm\",\"name\":\"华东理工大学第八届（秋）文献检索知识竞赛日程安排\",\"date\":\"2016-09-19\",\"tag\":3,\"md5\":\"555503908c4d8abad1bb8518e8dc70ac\",\"attachments\":[{\"path\":\"http://202.120.96.104/jssm.htm\",\"name\":\"http://202.120.96.104/jssm.htm\",\"format\":\"\"},{\"path\":\"http://202.120.96.104:7777/file/ji/jssm.htm\",\"name\":\"http://202.120.96.104/jsxt.\",\"format\":\"\"}]},{\"path\":\"/s/75/t/134/0d/80/info68992.htm\",\"name\":\"各学院教务办公室地点及电话\",\"date\":\"2016-09-19\",\"tag\":4,\"md5\":\"452616de9450cd4a0371b1bf5c999112\",\"attachments\":[]},{\"path\":\"/s/75/t/134/0e/12/info69138.htm\",\"name\":\"20161学期重读报名通知(新)\",\"date\":\"2016-09-19\",\"tag\":1,\"bold\":true,\"md5\":\"5f9d291dc500402d6963c336d1a8d5a5\",\"attachments\":[{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/dccb04c3-0786-451b-8ade-1fde7b3c297d.doc\",\"name\":\"重读报名流程及说明-学生参考\",\"format\":\"doc\",\"size\":34304,\"md5\":\"85c33f665be9a0a4bfba4b01fd6776dc\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/601f4fd1-9abc-48ce-81d9-6beb6a64efa9.doc\",\"name\":\"学生替换课程认定申请表\",\"format\":\"doc\",\"size\":32768,\"md5\":\"27dd96f40985ec2beabe02f800d3fcdb\"},{\"path\":\"/picture/article/75/6f/f6/0315a85a49b7bac2fef1cb45744d/08610c2f-4721-4c87-948b-ba36d2e8acb3.xls\",\"name\":\"201601学期 开班重读课程 开课情况表\",\"format\":\"xls\",\"size\":292,\"md5\":\"41e58aa57c18a404c2d5e1a7783c8a0e\"}]},{\"path\":\"/s/75/t/134/0e/d5/info69333.htm\",\"name\":\"20161素质教育讲座通知及安排表\",\"date\":\"2016-09-20\",\"tag\":1,\"md5\":\"6dee907ea6b39b733ee9cf7d0756ce03\",\"attachments\":[{\"path\":\"/picture/article/75/03/1f/314dbe424de995b5a7f4724a7ac2/16b8e01c-ebdb-4435-995c-1c43a50440eb.xlsx\",\"name\":\"20161素质教育讲座安排\",\"format\":\"xlsx\",\"size\":14289,\"md5\":\"abfd903fe586bcbc86c33c12bfc03d08\"}]},{\"path\":\"/s/75/t/134/0e/e9/info69353.htm\",\"name\":\"关于公示2015级“卓越工程师教育培养计划”选拔录取名单的通知\",\"date\":\"2016-09-20\",\"tag\":3,\"md5\":\"7c49f0ededd483fc4ffce0676d4b803b\",\"attachments\":[{\"path\":\"mailto:zhangfan2008@ecust.edu.cn\",\"name\":\"zhangfan2008@ecust.edu.cn\",\"format\":\"\"},{\"path\":\"/picture/article/75/0c/04/daedea514bcabb3a969a193999e9/dc5e5077-7ea0-4140-82b8-036e7db31cf2.xlsx\",\"name\":\"附件：华东理工大学2015级“卓越工程师教育培养计划”试点班录取名单\",\"format\":\"xlsx\",\"size\":13636,\"md5\":\"14538cab99973c78c52321c02ba6f0d7\"}]},{\"path\":\"/s/75/t/134/0d/7d/info68989.htm\",\"name\":\"体育学院关于补考、缓考、重修、保健班及学生成绩疑问处理的通知\",\"date\":\"2016-09-20\",\"tag\":4,\"md5\":\"b315d4f3e6f828b2e28ebb29178e95f6\",\"attachments\":[]}]",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{jwc}}/newses\",\"headers\":[{\"key\":\"{{header-user-key}}\",\"value\":\"{{header-user-value}}\",\"enabled\":true}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-22T14:03:44.000Z",
+					"updatedAt": "2016-09-22T14:03:44.000Z"
+				}
+			]
+		},
+		{
+			"id": "def2f9ab-8aaa-9725-f5b1-e3df129aca79",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-apis}}/lovecust/general/apk",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"Android-Version\"] = res.name && res.ename && res.app && res.api && res.url\n                            && res.md5 && res.sha1 && res.size && res.date && res.about;\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1482076097666,
+			"name": "Get Android Version",
+			"description": "# Check Android Version Info\n\n> Created by Fisher on 2016-09-23 at 09:26.\n\nMethod: **GET**.\n\n---\n\n\n## Response\n\n{{android-version-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 584757955,
+					"request": "def2f9ab-8aaa-9725-f5b1-e3df129aca79",
+					"id": "3baaac02-600b-3283-18f9-8a0af97fb61b",
+					"name": "Android-Version",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "27",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Encoding",
+							"key": "Content-Encoding",
+							"value": "gzip",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Fri, 23 Sep 2016 01:31:22 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"42f-MW36yCX7lJ5d9SOH7kSiYg\"",
+							"description": ""
+						},
+						{
+							"name": "Transfer-Encoding",
+							"key": "Transfer-Encoding",
+							"value": "chunked",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"name\":\"Lovecust\",\"ename\":\"Lovecust\",\"app\":\"v0.9.5\",\"api\":\"v1.1\",\"url\":\"http://lovecust.com/modules/assets/lovecust.v0.9.5.apk\",\"md5\":\"bc7d301d99d3c4fd20cf5a0485222049\",\"sha1\":\"0ffaeef515cb25a380690dd64dd08b7260070b9f\",\"size\":\"3.87 MB\",\"date\":\"2016-06-07\",\"about\":\"Lovecust 服务于华理学生和教职工，荣幸能够与您共同成长 *_*\\nLovecust 目标是让生活变得简单，高效率，轻松. ..\",\"eabout\":\"Lovecust is a growing community powered by Ecust stduents and serves for all the students and faculties from Ecust.\\nLovecust is targeting for making our complicated lifes more convient, efficient, and easy.\",\"desc\":\"添加便签模块\\n教务处查询可评论，并显示头像\\n首页显示教学周数\",\"edesc\":\"Add module <todo-list>\\nComment on jwc news and show avatars\\nShow the week number on mainpage\",\"detail\":\"自动登录华理校园网\\n图书馆人数查询\\n华理校历查询\\n便签记录生活\",\"edetail\":\"Log in Ecust-Wifi-Server automatically and instantly. ..\\nStudents number in library\\nEcust Calendar\\nkeep your todo-List\"}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{app-general}}/android-version\",\"headers\":[{\"key\":\"{{header-user-key}}\",\"value\":\"{{header-user-value}}\",\"enabled\":true}],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-09-23T01:21:32.000Z",
+					"updatedAt": "2016-09-23T01:21:32.000Z"
+				}
+			]
+		},
+		{
+			"id": "e072416b-a22a-bda8-3577-ee4c6c9e5a20",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-apis}}/turing/chats",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"Library-Status\"] = res\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1484233046466,
+			"name": "turing-chat",
+			"description": "# Turing Chat\n\n> Created by Fisher on 2016-09-22 at 23:11.\n\nMethod: **POST**.\n\n---\n\n\n## Request\n\n- value: {String}\n  - Content to chat to turing.\n\n## Response\n\n{{turing-reply-object}}\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [],
+			"rawModeData": "{\n  \"value\": \"天气怎么样\"\n}"
+		},
+		{
+			"id": "fa993aa8-5c44-95d7-97bb-ff9323d9aec3",
+			"headers": "{{header-user-key}}: {{header-user-value}}\nContent-Type: application/json\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-remove\"] = res && \n                                res._id &&\n                                res.info.name;\n\npostman.setEnvironmentVariable(\"activity-id\", res._id);\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485658698551,
+			"name": "Remove Activity",
+			"description": "# Create A Note\n\n> Created by Fisher on 2016-10-03 at 12:01.\n\nMethod: **POST**.\n\n---\n\n## Request\n\n- name: {String}\n  - note name\n- value='': {String}\n  - note content\n- type=default: {Number}\n  - note type\n- permission=default: {Number}\n  - note permission\n- tags='': {String}\n  - note tag\n- desc=substr(100): {String}\n  - note description\n\n## Response\n\n---\n\n",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "7f89ab3f-8ad7-a2af-2200-392e1f7cdd5d",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "38147443-3090-22c0-4153-6403cf24afc4",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		},
+		{
+			"id": "fc47da64-7a0b-e29f-da63-8b33b632dd92",
+			"headers": "{{header-user-key}}: {{header-user-value}}\n",
+			"url": "{{address-api}}/ecust/activities/{{activity-id}}/members",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": "var res = JSON.parse(responseBody);\n\ntests[\"app-activity-members\"] = res && res instanceof Array;\n\nif(0 < res.length){\n    postman.setEnvironmentVariable(\"member-id\", res[0]._id);\n}\n\n",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1485681667149,
+			"name": "Get Members",
+			"description": "",
+			"collectionId": "2ec467b1-77b9-3e88-8c2e-57a90d857572",
+			"responses": [
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "e932b06a-97f3-99e3-9c03-fea7000e07df",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				},
+				{
+					"owner": "822070",
+					"lastUpdatedBy": "822070",
+					"lastRevision": 619995097,
+					"request": {
+						"url": "{{address}}/{{ecust}}/{{library}}/status",
+						"headers": [],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"id": "c46ae6ff-afed-a4a3-1b83-3986deaad4e6",
+					"name": "library-status",
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK"
+					},
+					"time": "29",
+					"headers": [
+						{
+							"name": "Access-Control-Allow-Origin",
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"description": ""
+						},
+						{
+							"name": "Connection",
+							"key": "Connection",
+							"value": "keep-alive",
+							"description": ""
+						},
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "85",
+							"description": ""
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": ""
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 22 Sep 2016 13:16:38 GMT",
+							"description": ""
+						},
+						{
+							"name": "ETag",
+							"key": "ETag",
+							"value": "W/\"55-og2tH9rzLW8XxnvbSdFgPA\"",
+							"description": ""
+						},
+						{
+							"name": "Vary",
+							"key": "Vary",
+							"value": "Accept-Encoding",
+							"description": ""
+						},
+						{
+							"name": "X-Content-Type-Options",
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"description": ""
+						},
+						{
+							"name": "X-Powered-By",
+							"key": "X-Powered-By",
+							"value": "Express",
+							"description": ""
+						},
+						{
+							"name": "errcode",
+							"key": "errcode",
+							"value": "0",
+							"description": ""
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"today\":3139,\"available\":[15,151,203,170,146,13],\"occupied\":[21,171,258,202,203,43]}",
+					"language": "javascript",
+					"rawDataType": "text",
+					"state": {
+						"size": "normal"
+					},
+					"previewType": "html",
+					"searchResultScrolledTo": "-1",
+					"version": null,
+					"requestObject": "{\"url\":\"{{address}}/{{ecust}}/{{library}}/status\",\"headers\":[],\"data\":null,\"method\":\"GET\",\"dataMode\":\"params\"}",
+					"createdAt": "2016-10-05T16:14:07.000Z",
+					"updatedAt": "2016-10-05T16:14:07.000Z",
+					"write": true
+				}
+			],
+			"rawModeData": ""
+		}
+	]
+}
